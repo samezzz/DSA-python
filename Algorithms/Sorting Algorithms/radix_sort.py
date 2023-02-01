@@ -30,3 +30,15 @@ def radix_sort(arr):
     
     # Return the sorted list
     return arr
+
+'''
+Radix sort is an integer sorting algorithm that sorts a list of non-negative integers by sorting each digit of the numbers, starting from the least significant digit and moving to the most significant digit.
+
+It is used when the elements to be sorted are integers or have a natural ordering as integers, and the number of digits in the elements is not too large. Radix sort is efficient for large datasets, especially when the number of digits in the elements is close to constant.
+
+The algorithm works by dividing the elements into buckets based on their digits, and then reassembling the buckets back into the original list. The sorting process is repeated for each digit, from the least significant digit to the most significant digit.
+
+Since radix sort is a non-comparison-based sorting algorithm, it does not use any comparison operators like <, >, =, etc. Instead, it uses simple arithmetic operations such as integer division and modulus to sort the elements. This makes radix sort a stable sorting algorithm, which means that it preserves the relative order of elements that have the same value.
+
+Radix sort has a time complexity of O(d * (n + b)), where d is the number of digits in the elements, n is the number of elements, and b is the base used for the number system (10 for decimal numbers). For this reason, radix sort is considered to be a linear-time sorting algorithm.
+'''

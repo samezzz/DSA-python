@@ -35,9 +35,9 @@ test = {
 locate_card(**test['input']) == test['output']
 
 tests = []
-# query occurs in the middle
 tests.append(test)
 
+# query occurs in the middle
 tests.append({
   'input': {
     'cards': [13, 11, 10, 7, 4, 3, 1, 0],

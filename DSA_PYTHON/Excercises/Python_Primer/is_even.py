@@ -20,10 +20,29 @@ def is_even(number):
   elif last_digit in odd:
     return False
 
-print(is_even(1278))
-
 # more efficient solution
 """
 def is_even(n):
   return (n & 1) == 0
 """
+
+
+import unittest
+
+class TestIsEven(unittest.TestCase):
+  def test_is_even(self):
+    # Test if a number is even
+    self.assertEqual(is_even(26), True)
+    
+    # Test if a number is odd
+    self.assertEqual(is_even(31), False)
+    
+    # Testing negative even number
+    self.assertEqual(is_even(-52), True)
+    
+    # Testing negative odd number
+    self.assertEqual(is_even(-31), False)
+    
+if __name__ == '__main__':
+  unittest.main()
+    

@@ -2,7 +2,7 @@
 Write a short Python function, is_even(k), that takes an integer value and returns True if k is even, and False otherwise. However, your function cannot use the multiplication, modulo, or division operators
 """
 
-# It's even if the last digit is [0, 2, 4, 6, 8] and odd if [1, 3, 5, 7, 9]
+# It's even if the last digit is [0, 2, 4, 6, 8] and odd if it's [1, 3, 5, 7, 9]
 even = [0, 2, 4, 6, 8]
 odd = [1, 3, 5, 7, 9]
 

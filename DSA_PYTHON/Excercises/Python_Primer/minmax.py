@@ -3,7 +3,19 @@ Write a short Python function, minmax(data), that takes a sequence of one or mor
 """
 
 def minmax(data):
-  pass
+  # Initialize min and max values
+    min_val = data[0]
+    max_val = data[0]
+    
+    # Loop through the data and update min and max values
+    for num in data:
+        if num < min_val:
+            min_val = num
+        if num > max_val:
+            max_val = num
+    
+    # Return a tuple of the min and max values
+    return (min_val, max_val)
       
 
 import unittest

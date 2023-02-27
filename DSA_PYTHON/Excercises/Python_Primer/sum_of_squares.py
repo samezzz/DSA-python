@@ -5,22 +5,24 @@ Write a short Python function that takes a positive integer n and returns the su
 def sumOfSquares(pos_num):
   # Get a list of all the numbers smaller than the positive number
   below_num = list(range(pos_num))
+  # Before iteration sum == 0
   init_sum = 0
+  # Loop through the list and add the square of each number to init_sum
   for i in below_num:
     init_sum += below_num[i] ** 2
   return init_sum
 
-  """
+"""
 A more efficient way of doing this
 def sumOfSquares(pos_num):
   return (pos_num * (pos_num + 1) * (2 * pos_num + 1)) // 6
-  
+
 OR
 
 def sumOfSquares(pos_num):
 return sum(i ** 2 for i in range(pos_num))
-  
-  """
+
+"""
 
 import unittest
 

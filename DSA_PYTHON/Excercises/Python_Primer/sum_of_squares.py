@@ -2,9 +2,9 @@
 Write a short Python function that takes a positive integer n and returns the sum of the squares of all the positive integers smaller than n.
 """
 
-def sumOfSquares(pos_num):
+def sumOfSquares(pos_int):
   # Get a list of all the numbers smaller than the positive number
-  below_num = list(range(pos_num))
+  below_num = list(range(pos_int))
   # Before iteration sum == 0
   init_sum = 0
   # Loop through the list and add the square of each number to init_sum
